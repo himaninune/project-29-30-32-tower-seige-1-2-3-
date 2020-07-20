@@ -100,7 +100,7 @@ function keyPressed() {
 }
 
 async function getBackgroundImage() {
-    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var json = await response.json();
     var dateTime = json.datetime;
     console.log(dateTime);
